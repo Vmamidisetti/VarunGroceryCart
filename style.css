@@ -291,6 +291,11 @@ main {
     display: none;
 }
 
+/*this is to enable your JavaScript filtering logic */
+.hidden {
+    display: none ;
+}
+
 /* Sticky footer cart summary */
 .cart-summary {
     position: fixed;
