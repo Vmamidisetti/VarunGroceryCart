@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.bing.com/th/id/OIP.L9bhhE61zLwoDylJwPpqowHaGs?w=193&h=174&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2" type="image/x-icon">
+    <title>Blue Cart - Grocery Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar-wrapper">
+        <header>
+            <div class="brand-section">
+                <div class="brand-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    Blue Cart
+                </div>
+                <div class="location-text">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span class="location-text-inner">Delivering to: Hyderabad</span>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Search for groceries...">
+            </div>
+
+            <div class="cart-header-icon" id="cartHeaderIcon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="cart-count" id="cartCountBadge">0</span>
+            </div>
+        </header>
+
+        <nav class="categories-container" id="categoryNav">
+            <!-- Categories will be injected here via JS -->
+        </nav>
+    </div>
+
+    <main>
+        <div id="noProducts" class="empty-state">
+            No products found matching your search.
+        </div>
+        <div class="product-grid" id="productGrid">
+            <!-- Products will be injected here via JS -->
+        </div>
+    </main>
+
+    <footer class="cart-summary" id="cartSummary">
+        <div class="summary-info">
+            <h3>Total: ₹<span id="summaryTotalAmount">0</span></h3>
+            <p><span id="summaryTotalItems">0</span> items in cart</p>
+        </div>
+        <button class="btn-checkout" id="checkoutBtn">Proceed to Checkout</button>
+    </footer>
+
+    <!-- Custom Alert Notification -->
+    <div id="customAlert" class="custom-alert">
+        Order Placed Successfully!
+    </div>
+
+    <script src="script.js">
+   
+    
+</script>
+    
+</body>
+</html>
